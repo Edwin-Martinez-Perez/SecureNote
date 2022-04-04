@@ -3,3 +3,10 @@
 //
 
 #include "UserInteraction.h"
+#include <iostream>
+
+using namespace std;
+
+//creates the users profile
+
+}

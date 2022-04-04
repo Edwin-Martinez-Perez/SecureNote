@@ -55,8 +55,8 @@ build CMakeFiles/SecureNote.dir/main.cpp.obj: CXX_COMPILER__SecureNote_Debug C$:
   OBJECT_DIR = CMakeFiles\SecureNote.dir
   OBJECT_FILE_DIR = CMakeFiles\SecureNote.dir
 
-build CMakeFiles/SecureNote.dir/UserInformation.cpp.obj: CXX_COMPILER__SecureNote_Debug C$:/Users/Edwin/CLionProjects/SecureNote/UserInformation.cpp || cmake_object_order_depends_target_SecureNote
-  DEP_FILE = CMakeFiles\SecureNote.dir\UserInformation.cpp.obj.d
+build CMakeFiles/SecureNote.dir/Person.cpp.obj: CXX_COMPILER__SecureNote_Debug C$:/Users/Edwin/CLionProjects/SecureNote/Person.cpp || cmake_object_order_depends_target_SecureNote
+  DEP_FILE = CMakeFiles\SecureNote.dir\Person.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\SecureNote.dir
   OBJECT_FILE_DIR = CMakeFiles\SecureNote.dir
@@ -75,7 +75,7 @@ build CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj: CXX_COMPILER__SecureNot
 #############################################
 # Link the executable SecureNote.exe
 
-build SecureNote.exe: CXX_EXECUTABLE_LINKER__SecureNote_Debug CMakeFiles/SecureNote.dir/main.cpp.obj CMakeFiles/SecureNote.dir/UserInformation.cpp.obj CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj
+build SecureNote.exe: CXX_EXECUTABLE_LINKER__SecureNote_Debug CMakeFiles/SecureNote.dir/main.cpp.obj CMakeFiles/SecureNote.dir/Person.cpp.obj CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SecureNote.dir
