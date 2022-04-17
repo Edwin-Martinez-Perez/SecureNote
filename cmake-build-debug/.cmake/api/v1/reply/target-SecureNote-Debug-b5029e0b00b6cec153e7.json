@@ -112,7 +112,7 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "UserInformation.h",
+			"path" : "Person.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -129,7 +129,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "UserInformation.cpp",
+			"path" : "Person.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{

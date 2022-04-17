@@ -1,0 +1,25 @@
+Class UserInfo
+START
+//Setters
+setUserName(){}
+setPassword(){}
+setFirstName(){}
+setLastName(){}
+setEmail(){}
+//Getters
+getsetUserName(){}
+getPassword(){}
+getFirstName()
+getLastName(){}
+getEmail(){}
+//variables
+string userName;
+int password;
+string firstName;
+string lastName;
+string email;
+END
+UserInfo.cpp
+START
+
+
