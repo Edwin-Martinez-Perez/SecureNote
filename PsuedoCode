@@ -1,4 +1,4 @@
-Class UserInfo
+Class UserInfo.h
 START
 //Setters
 setUserName(){}
@@ -19,7 +19,96 @@ string firstName;
 string lastName;
 string email;
 END
+
 UserInfo.cpp
 START
+setUserName(newUserName) {
+set the use name to newUserName
+}
+setPassword(newPassword) {
+set password to newPassword
+}
+setFirstName(newFirstName) {
+set firstName to newFirstName
+}
+setLastName(newLastName) {
+set lastName to newLastName
+}
+setEmail(newEmail) {
+set email to newEmail
+}
+getsetUserName(){
+return username
+}
+getPassword(){
+return password
+}
+getFirstName(){
+return first name
+}
+getLastName(){
+return last name
+}
+getEmail(){
+return email
+}
+END
 
+Class UserInteraction.h
+START
+void setFileName(string newFileName, userID) {
+    create a file name and add the users ID in the file
+}
+getFileName (){
+retrieve file name
+}
+createNote() {}
+writeNote(string fileName) {}
+readNote(string fileName) {}
+deleteNote(string fileName) {}
+findFile(){}
+END
 
+UserInteraction.cpp
+START
+void setFileName(string newFileName, userID) {
+    create a file name and add the users ID in the file
+}
+findFile() {
+will look through a file system to find the users notes
+}
+getFileName (){
+retrieve file name
+}
+createNote() {
+call findFile()
+create a .txt file for the user to use. This .txt file will be linked to them by
+using their ID created for them when they create an account
+}
+writeNote(string fileName) {
+call findFile()
+will find the users file, display all their notes, and allow them choose which note they would like to
+edit
+}
+readNote(string fileName) {
+call findFile()
+will allow the user to view all their notes and read them
+}
+deleteNote(string fileName) {
+call findFile()
+allows for the user to delete any note that they wish
+}
+END
+
+main.cpp
+START
+int main() {
+1.) Check that the user has an account
+    IF user does have an account
+    THEN display user menu
+    IF user does not have an account
+    THEN prompt user to create an account
+2.) Prompt the user with menu of options
+3.) execute whatever the user wants to do using methods from class Person.h and UserInteraction.h
+4.) If time allows find a way to encrypt user data
+}
