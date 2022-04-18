@@ -1,17 +1,18 @@
 Class UserInfo.h
 START
 //Setters
-setUserName(){}
-setPassword(){}
-setFirstName(){}
-setLastName(){}
-setEmail(){}
+void setUserName(){}
+void setPassword(){}
+void setFirstName(){}
+void setLastName(){}
+void setEmail(){}
+void createID(){}
 //Getters
-getsetUserName(){}
-getPassword(){}
-getFirstName()
-getLastName(){}
-getEmail(){}
+string getsetUserName(){}
+int getPassword(){}
+string getFirstName()
+string getLastName(){}
+string getEmail(){}
 //variables
 string userName;
 int password;
@@ -22,35 +23,38 @@ END
 
 UserInfo.cpp
 START
-setUserName(newUserName) {
+void setUserName(newUserName) {
 set the use name to newUserName
 }
-setPassword(newPassword) {
+void setPassword(newPassword) {
 set password to newPassword
 }
-setFirstName(newFirstName) {
+void setFirstName(newFirstName) {
 set firstName to newFirstName
 }
-setLastName(newLastName) {
+void setLastName(newLastName) {
 set lastName to newLastName
 }
-setEmail(newEmail) {
+void setEmail(newEmail) {
 set email to newEmail
 }
-getsetUserName(){
+string getsetUserName(){
 return username
 }
-getPassword(){
+int getPassword(){
 return password
 }
-getFirstName(){
+string getFirstName(){
 return first name
 }
-getLastName(){
+string getLastName(){
 return last name
 }
-getEmail(){
+string getEmail(){
 return email
+}
+void createID(){
+random ID assigned to user when account is created. used as the key for dictionary
 }
 END
 
@@ -59,14 +63,14 @@ START
 void setFileName(string newFileName, userID) {
     create a file name and add the users ID in the file
 }
-getFileName (){
+string getFileName (){
 retrieve file name
 }
-createNote() {}
-writeNote(string fileName) {}
-readNote(string fileName) {}
-deleteNote(string fileName) {}
-findFile(){}
+void createNote() {}
+void writeNote(string fileName) {}
+void readNote(string fileName) {}
+void deleteNote(string fileName) {}
+bool findFile(){}
 END
 
 UserInteraction.cpp
@@ -74,27 +78,27 @@ START
 void setFileName(string newFileName, userID) {
     create a file name and add the users ID in the file
 }
-findFile() {
+bool findFile(userEmail, userPassword) {
 will look through a file system to find the users notes
 }
-getFileName (){
+string getFileName (){
 retrieve file name
 }
-createNote() {
+void createNote() {
 call findFile()
 create a .txt file for the user to use. This .txt file will be linked to them by
 using their ID created for them when they create an account
 }
-writeNote(string fileName) {
+void writeNote(string fileName) {
 call findFile()
 will find the users file, display all their notes, and allow them choose which note they would like to
 edit
 }
-readNote(string fileName) {
+void readNote(string fileName) {
 call findFile()
 will allow the user to view all their notes and read them
 }
-deleteNote(string fileName) {
+void deleteNote(string fileName) {
 call findFile()
 allows for the user to delete any note that they wish
 }
@@ -103,12 +107,38 @@ END
 main.cpp
 START
 int main() {
-1.) Check that the user has an account
-    IF user does have an account
-    THEN display user menu
-    IF user does not have an account
-    THEN prompt user to create an account
-2.) Prompt the user with menu of options
-3.) execute whatever the user wants to do using methods from class Person.h and UserInteraction.h
-4.) If time allows find a way to encrypt user data
+bool exit = true
+    while exit == true {
+        print("Please enter your login info to exit program enter 5")
+        check = findFile();
+        IF check is = true
+            CALL userMenu
+        IF userinput is 5
+            exit is = false
+        ELSE
+            CALL createUser
+    }
+
+}
+
+
+int userMenu() {
+print(enter a 1 to view notes, enter a 2 to edit a note, enter a 3 to delete a note)
+return user input
+IF 1
+    CALL view note
+IFELSE
+    CALL editNote
+IFELSE
+    CALL deleteNote
+ELSE
+    print("Wrong input try again")
+    CALL userMenu();
+}
+
+void createUser() {
+CIN get information for new user
+CALL Person constructor to create person
+ADD person to dictionary
+CALL createID
 }
