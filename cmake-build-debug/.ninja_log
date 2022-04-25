@@ -1,0 +1,20 @@
+# ninja log v5
+102	2692	6726268822877877	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
+3	3448	6726268830435644	CMakeFiles/SecureNote.dir/main.cpp.obj	65998fbd08b0ddd4
+152	4093	6726268836817112	CMakeFiles/SecureNote.dir/UserInfo.cpp.obj	9bffe60e20cc380d
+4093	4934	6726268845294596	SecureNote.exe	ca76b0f549f06f1
+69	1479	6726280250105062	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
+5	1906	6726280254369339	CMakeFiles/SecureNote.dir/main.cpp.obj	65998fbd08b0ddd4
+43	2187	6726280257157721	CMakeFiles/SecureNote.dir/UserInfo.cpp.obj	9bffe60e20cc380d
+2187	2549	6726280260837634	SecureNote.exe	ca76b0f549f06f1
+23	951	6726299127094749	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
+3	1071	6726299128192759	CMakeFiles/SecureNote.dir/main.cpp.obj	65998fbd08b0ddd4
+33	1233	6726299129920143	CMakeFiles/SecureNote.dir/UserInfo.cpp.obj	9bffe60e20cc380d
+5	553	6726299758846336	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
+4	796	6726300192913384	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
+3	756	6726300814738152	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
+20	879	6726301852165277	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
+5	1000	6726301853368804	CMakeFiles/SecureNote.dir/main.cpp.obj	65998fbd08b0ddd4
+17	862	6726302517002067	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
+5	956	6726303774648878	CMakeFiles/SecureNote.dir/main.cpp.obj	65998fbd08b0ddd4
+4	766	6726303970960685	CMakeFiles/SecureNote.dir/UserInteraction.cpp.obj	ebf4345a4877f67d
