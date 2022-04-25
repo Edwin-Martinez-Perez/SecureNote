@@ -3,4 +3,4 @@ project(SecureNote)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SecureNote Person.h UserInteraction.h  main.cpp Person.cpp UserInteraction.cpp)
+add_executable(SecureNote UserInfo.h UserInteraction.h  main.cpp UserInfo.cpp UserInteraction.cpp)
